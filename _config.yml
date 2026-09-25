@@ -1,0 +1,43 @@
+# ---------------------------------------------------------------
+# Site settings — edit these once and they update everywhere.
+# ---------------------------------------------------------------
+title: Resilient Shores
+tagline: Adapting to climate change through storytelling
+description: >-
+  Resilient Shores by Bob Freitag shows how creating and telling stories can
+  help people and communities face the hard decisions a changing climate brings.
+lang: en_US
+author: Bob Freitag
+
+# Links and email addresses used across the site
+springer_url: https://link.springer.com/book/10.1007/978-3-032-09047-8
+contact_email: bcfreitag@outlook.com     # Let's chat form sends here
+author_email: ag@outlook.com             # "Email Bob Freitag" link on About page (confirm)
+
+# Review mode: keeps search engines from indexing the draft.
+# Set to false when the site launches on ResilientShores.org.
+noindex: true
+
+# Leave url and baseurl empty: GitHub Pages fills them in automatically,
+# both for username.github.io/repo-name and for a custom domain.
+# url: "https://resilientshores.org"
+# baseurl: ""
+
+# Default social sharing image
+image: /assets/images/book/book-cover.jpg
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

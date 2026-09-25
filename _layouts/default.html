@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% include head.html %}
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  {% include header.html %}
+  <main id="main" tabindex="-1">
+{{ content }}
+  </main>
+  {% unless page.hide_cta %}{% include community-cta.html %}{% endunless %}
+  {% include footer.html %}
+  <div class="toast" id="toast" role="status"></div>
+  <script src="{{ '/assets/js/main.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
+</body>
+</html>

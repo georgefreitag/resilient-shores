@@ -1,0 +1,42 @@
+---
+title: "Let’s chat"
+description: "Need help with your story, a speaker for an event, or support for a workshop? Get in touch with Bob Freitag."
+permalink: /lets-chat/
+hide_cta: true
+---
+  <section class="wash">
+    <div class="wrap contact-grid">
+      <div class="prose">
+        <h1>Puzzled?</h1>
+        <p style="font-size:1.25rem">Do you need help with your story? Considering options? Are you having a hard time confronting risks?</p>
+        <p>Creating, telling, and retelling stories may help.</p>
+        <p>Please feel free to contact us with your story; we will try to help.</p>
+        <img class="art" src="{{ '/assets/images/artwork/night-storm.jpg' | relative_url }}" width="700" height="936" style="max-width:300px;margin-top:2rem" alt="Pastel drawing of a stormy night sky with a small warm light on the horizon" loading="lazy">
+      </div>
+      <div class="form-card">
+        <h2 style="font-size:2rem">Have a problem or an opportunity? Let’s chat.</h2>
+        <form id="chatForm" data-email="{{ site.contact_email }}" novalidate>
+          <div class="field"><label for="c-name">Name</label><input type="text" id="c-name" name="name" required autocomplete="name"></div>
+          <div class="field"><label for="c-email">Email address</label><input type="email" id="c-email" name="email" required autocomplete="email"></div>
+          <div class="field"><label for="c-org">Organization <span class="hint">(if appropriate)</span></label><input type="text" id="c-org" name="org" autocomplete="organization"></div>
+          <div class="field">
+            <label for="c-story">Your story <span class="counter" id="wc">0 / 100 words</span></label>
+            <span class="hint" id="c-story-hint">The context, the probable crisis, and any resolutions you’re considering.</span>
+            <textarea id="c-story" name="story" aria-describedby="c-story-hint" style="margin-top:.4rem"></textarea>
+          </div>
+          <fieldset>
+            <legend>How can we help?</legend>
+            <div class="choices">
+              <label class="choice"><input type="checkbox" name="help" value="Help with my story"> Help with my story</label>
+              <label class="choice"><input type="checkbox" name="help" value="Speak at an event"> Speak at an event</label>
+              <label class="choice"><input type="checkbox" name="help" value="Help with a workshop"> Help with a workshop</label>
+              <label class="choice"><input type="checkbox" name="help" value="Something else"> Something else</label>
+            </div>
+          </fieldset>
+          <p class="status" id="chatError" role="alert" style="color:var(--signal-deep)"></p>
+          <button type="submit" class="btn btn-primary">Send message</button>
+          <p class="note" style="margin-top:1rem">This opens your email app with your message ready to send to <a href="mailto:{{ site.contact_email }}">{{ site.contact_email }}</a>.</p>
+        </form>
+      </div>
+    </div>
+  </section>

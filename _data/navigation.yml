@@ -1,0 +1,9 @@
+# Main navigation (header and footer). Add, remove, or reorder links here.
+- title: Home
+  url: /
+- title: About the author
+  url: /about/
+- title: Create a story
+  url: /create-a-story/
+- title: Let’s chat
+  url: /lets-chat/
