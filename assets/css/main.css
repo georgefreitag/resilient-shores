@@ -240,6 +240,20 @@ legend{font-family:var(--display);font-size:1.05rem;font-weight:500;margin-botto
 .ws-scale{position:relative;margin-top:1rem}
 .ws-scale > .worksheet{width:1040px;max-width:none;padding:2.5rem;transform-origin:0 0}
 
+/* About our team */
+.team{margin-top:1rem}
+.member{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:clamp(2rem,5vw,4.5rem);align-items:start;padding:clamp(2.5rem,5vw,3.5rem) 0;border-top:1px solid var(--line)}
+.member:first-child{border-top:0;padding-top:1.5rem}
+.member.flip{grid-template-columns:300px minmax(0,1fr)}
+.member.flip .member-photo{order:-1}
+.member h2{font-size:clamp(1.9rem,3.4vw,2.5rem);margin-bottom:.6em}
+.member-email{font-family:var(--display);font-size:1.05rem;margin-top:1.5rem}
+.member-photo img{width:100%;aspect-ratio:1;object-fit:cover;object-position:50% 25%;border-radius:4px;box-shadow:0 10px 24px rgba(8,40,36,.16)}
+@media (max-width:860px){
+  .member,.member.flip{grid-template-columns:1fr;gap:1.5rem}
+  .member .member-photo,.member.flip .member-photo{order:-1;max-width:240px}
+}
+
 /* Footer */
 footer{background:var(--cove);color:#d5ebe6;padding:3rem 0 2.5rem;font-family:var(--display)}
 footer .wrap{display:grid;grid-template-columns:1fr auto;gap:2rem;align-items:end}

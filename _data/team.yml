@@ -1,0 +1,59 @@
+# Team members on the About our team page, in display order.
+# Photos alternate sides automatically (1st right, 2nd left, 3rd right...).
+# Photos live in assets/images/team/ and display as squares.
+
+- id: bob-freitag
+  name: Bob Freitag
+  credentials: CFM
+  email: bcfreitag@outlook.com
+  photo: /assets/images/team/bob-freitag.jpg
+  width: 600
+  height: 555
+  alt: Portrait of Bob Freitag, smiling, wearing glasses and a cream cable-knit sweater
+  bio:
+    - >-
+      Bob Freitag was the director of the Institute for Hazards Mitigation Planning and Research (IHMP)
+      and an instructor in the Department of Urban Design and Planning at the University of Washington (UW).
+      Recognized for his contributions to education and disaster planning, he has received the Outstanding
+      Part-time Instructor Award from the department and the Jerry Louthain Award for Distinguished Service
+      from the Association of State Floodplain Managers. He has developed and taught courses for the Federal
+      Emergency Management Agency (FEMA), National Disaster Preparedness Training Center (NDPTC), and the
+      University of Washington, specializing in community resilience, hazards mitigation, and floodplain
+      management. Before joining UW, he served with FEMA, deploying on over 50 Federal Disaster Declarations.
+      His final role with FEMA Region 10 was as a Federal Coordination Officer, overseeing response efforts.
+
+- id: gerald-murphy
+  name: Gerald Murphy
+  credentials: JD, AICP, CFM
+  email: murphyge@ufl.edu
+  photo: /assets/images/team/gerald-murphy.jpg
+  width: 600
+  height: 599
+  alt: Portrait of Gerald Murphy, with gray hair and a beard, wearing a blue checked shirt
+  bio:
+    - >-
+      Jerry Murphy graduated from the University of Florida in 2000 with a J.D. with honors. Jerry is a
+      certified floodplain manager, certified urban and regional planner, and legal scholar. His work and
+      research involve land use planning and control law, community-based planning, code and regulation
+      drafting, floodplain management, growth and infrastructure finance, post-disaster redevelopment
+      planning, and community resilience/sustainability. He currently works with local governments through
+      UF to assemble teams of expert faculty, researchers, and student assistants to craft planning
+      approaches and strategies to address climate change, extreme weather, sea-level rise, “peril of flood”
+      and the other challenges facing local governments in the twenty-first century.
+
+- id: jeana-gomez
+  name: Jeana Gomez
+  credentials: CFM
+  email: wiserjc@gmail.com
+  photo: /assets/images/team/jeana-gomez.jpg
+  width: 600
+  height: 600
+  alt: Black-and-white portrait of Jeana Gomez, smiling, wearing round glasses
+  bio:
+    - >-
+      Currently, Jeana Gomez serves as Director of Resilience & Adaptation for the Center for Planning
+      Excellence (CPEX) in Louisiana. She has spent more than 15 years working at the intersection of climate
+      resilience, cultural identity, and community well-being. Her work has included collaborations with local
+      governments, nonprofits, community coalitions, and FEMA across the United States, including coastal
+      Louisiana, Miami, and the Pacific Northwest. She is trained in Applied Strategic Foresight and
+      specializes in climate resilience, adaptation, coalition building, and cultural preservation.
