@@ -16,7 +16,7 @@ author_email: ag@outlook.com             # "Email Bob Freitag" link on About pag
 
 # Review mode: keeps search engines from indexing the draft.
 # Set to false when the site launches on ResilientShores.org.
-noindex: true
+noindex: false
 
 # Leave url and baseurl empty: GitHub Pages fills them in automatically,
 # both for username.github.io/repo-name and for a custom domain.
