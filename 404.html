@@ -12,3 +12,15 @@ permalink: /404.html
       </div>
     </div>
   </section>
+<script>
+  // GitHub Pages serves this one 404 page for the whole site, including /staging/.
+  // When the missing page was under /staging/, keep the visitor on staging.
+  (function () {
+    var base = '/staging';
+    if (location.pathname.indexOf(base + '/') !== 0) return;
+    document.querySelectorAll('a[href^="/"]').forEach(function (a) {
+      var h = a.getAttribute('href');
+      if (h.indexOf(base + '/') !== 0) a.setAttribute('href', base + h);
+    });
+  })();
+</script>

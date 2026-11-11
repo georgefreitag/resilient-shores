@@ -3,6 +3,7 @@
 # built from the "staging" branch (see .github/workflows/pages.yml).
 # ---------------------------------------------------------------
 staging: true      # shows the "Staging" bar at the top of every page
+baseurl: "/staging" # every internal link and file path stays inside /staging/
 noindex: true      # adds <meta name="robots" content="noindex, nofollow">
 gtm_id: ""         # keeps staging visits out of Google Analytics
 
