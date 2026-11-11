@@ -1,0 +1,70 @@
+---
+layout: default
+---
+{%- comment -%}
+  Filled-in Resilience Story Board example.
+  Each example page supplies its story in front matter; this layout lays it out
+  like the printed worksheet, with the Story Arc and Plot Action callouts.
+{%- endcomment -%}
+  <section>
+    <div class="wrap">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="{{ '/create-a-story/' | relative_url }}">Create a story</a> / {{ page.crumb }}</nav>
+      <h1>{{ page.heading }}</h1>
+      <p class="prose" style="color:var(--muted)">{{ page.intro }}</p>
+      <div class="btn-row" style="margin:1.5rem 0 1rem">
+        <a class="btn btn-primary" href="{{ page.pdf | relative_url }}" download><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M11 3h2v9.2l3.3-3.3 1.4 1.4L12 16l-5.7-5.7 1.4-1.4 3.3 3.3zM4 18h16v2H4z"/></svg>Download example PDF</a>
+        <a class="btn btn-ghost" href="{{ '/create-a-story/your-story/' | relative_url }}">Create your own story</a>
+      </div>
+
+      <div class="ws-scale">
+      <div class="ws-annotated">
+      <div class="worksheet filled example">
+        <div class="ws-plot">
+          <p class="ws-title"><strong>The Story Plot:</strong> <span class="hand ws-plot-title">{{ page.plot_title }}</span></p>
+          <p class="hand ws-summary">{{ page.summary }}</p>
+          <div class="ws-line"><span>Values:</span><span class="hand">{{ page.values }}</span></div>
+          <div class="ws-line"><span>Conflicts:</span><span class="hand">{{ page.conflicts }}</span></div>
+          <div class="ws-line"><span>Resolutions:</span><span class="hand">{{ page.resolutions }}</span></div>
+        </div>
+        <div class="ws-body">
+          <div class="ws-w5">
+            {%- for item in page.w5 %}
+            <div class="ws-line"><span>{{ item.label }}:</span><span class="hand">{{ item.text | replace: '/', '/<wbr>' }}</span></div>
+            {%- endfor %}
+          </div>
+          <div class="board-wrap">
+            <img class="ws-board" src="{{ '/assets/images/worksheets/resilience-story-board.jpg' | relative_url }}" width="1957" height="1097" alt="Resilience Story Board filled in by hand with {{ page.plot_title }}">
+            <p class="hw hw-1">{{ page.part1 }}</p>
+            <p class="hw hw-2">{{ page.part2 }}</p>
+            <p class="hw hw-3">{{ page.part3 }}</p>
+            <div class="plot-action" aria-label="Plot Action: Rising/Lowering">
+              <svg class="plot-action-shape" viewBox="0 0 1040 220" aria-hidden="true"><path d="M846 118 L1022 118 Q1034 118 1034 130 L1034 198 Q1034 210 1022 210 L846 210 Q834 210 834 198 L834 162 L750 90 L834 140 L834 130 Q834 118 846 118 Z"/></svg>
+              <p class="plot-action-text">Plot Action:<br>Rising/Lowering</p>
+            </div>
+          </div>
+        </div>
+        <p class="ws-epilogue"><strong>Epilogue:</strong> <span class="hand">{{ page.epilogue }}</span></p>
+        <p class="ws-foot">From <i>Resilient Shores: Adapting to Climate Change Through Storytelling</i> by Bob Freitag. ResilientShores.org</p>
+      </div>
+      <aside class="ws-notes" aria-label="Story Arc">
+        <div class="story-arc" role="img" aria-label="Story Arc: {{ page.arc.top1 }} {{ page.arc.top2 }}, {{ page.arc.curve_top }}, {{ page.arc.curve_bottom1 }} {{ page.arc.curve_bottom2 }}, {{ page.arc.bottom1 }} {{ page.arc.bottom2 }}">
+          <img src="{{ '/assets/images/worksheets/story-arc.png' | relative_url }}" width="440" height="406" alt="">
+          <span class="arc-label arc-top1">{{ page.arc.top1 }}</span>
+          <span class="arc-label arc-top2">{{ page.arc.top2 }}</span>
+          <span class="arc-label arc-curve-top">{{ page.arc.curve_top }}</span>
+          <span class="arc-label arc-title">Story Arc</span>
+          <span class="arc-label arc-curve-bottom1">{{ page.arc.curve_bottom1 }}</span>
+          <span class="arc-label arc-curve-bottom2">{{ page.arc.curve_bottom2 }}</span>
+          <span class="arc-label arc-bottom1">{{ page.arc.bottom1 }}</span>
+          <span class="arc-label arc-bottom2">{{ page.arc.bottom2 }}</span>
+        </div>
+      </aside>
+      </div>
+      </div>
+
+      <div class="next-steps">
+        <a class="btn btn-primary" href="{{ page.other_url | relative_url }}">{{ page.other_label }}</a>
+        <a class="btn btn-ghost" href="{{ '/create-a-story/your-story/' | relative_url }}">Create your own story</a>
+      </div>
+    </div>
+  </section>

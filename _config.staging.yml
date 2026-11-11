@@ -1,0 +1,16 @@
+# ---------------------------------------------------------------
+# Staging overrides. Used only for the copy at resilientshores.org/staging/,
+# built from the "staging" branch (see .github/workflows/pages.yml).
+# ---------------------------------------------------------------
+staging: true      # shows the "Staging" bar at the top of every page
+noindex: true      # adds <meta name="robots" content="noindex, nofollow">
+gtm_id: ""         # keeps staging visits out of Google Analytics
+
+# Keep staging pages out of the sitemap (layout default repeated because
+# this list replaces the one in _config.yml)
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+      sitemap: false

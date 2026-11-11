@@ -254,6 +254,42 @@ legend{font-family:var(--display);font-size:1.05rem;font-weight:500;margin-botto
   .member .member-photo,.member.flip .member-photo{order:-1;max-width:240px}
 }
 
+/* Example worksheets: the paper, with Story Arc and Plot Action notes in the margin */
+.ws-annotated{display:grid;grid-template-columns:1040px 200px;gap:28px;align-items:start;width:1268px;transform-origin:0 0}
+.ws-annotated > .worksheet{width:1040px;max-width:none;padding:2.5rem}
+.example .ws-title{font-size:1.6rem}
+.example .ws-title strong{font-weight:500}
+.example .ws-plot .ws-line{align-items:baseline}
+.ws-plot-title{font-size:1.6rem;text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1.5px}
+.ws-summary{margin:.1rem 0 .4rem;font-size:1.1rem}
+.hw u,.hand u{text-underline-offset:3px}
+.example .hw{font-size:1.78cqw;line-height:1.18}
+.example .hw-2{left:26.6%;width:33%}
+.example .hw-3{left:64%;width:32.6%}
+.ws-notes{padding-top:.5rem}
+.story-arc{position:relative;container-type:inline-size;width:200px}
+.story-arc img{width:100%;display:block}
+.arc-label{position:absolute;font-family:"Kalam","Segoe Print","Bradley Hand","Comic Sans MS",cursive;color:#233a66;font-size:7.2cqw;line-height:1;white-space:nowrap;transform-origin:0 100%}
+.arc-top1{left:5.5%;top:5%;transform:rotate(3deg)}
+.arc-top2{left:5.5%;top:15.5%;transform:rotate(4deg)}
+.arc-curve-top{left:66%;top:16%;transform:rotate(27deg)}
+.arc-title{left:3%;top:37%;font-size:10.5cqw}
+.arc-curve-bottom1{left:58%;top:62%;transform:rotate(-22deg)}
+.arc-curve-bottom2{left:64%;top:72%;transform:rotate(-22deg)}
+.arc-bottom1{left:14%;top:68%;transform:rotate(-10deg)}
+.arc-bottom2{left:16%;top:79%;transform:rotate(-10deg)}
+/* Callout sits in the right margin; its pointer reaches into the paper to the end of the red line */
+.plot-action{position:absolute;left:0;top:0;width:1040px;height:220px;pointer-events:none;z-index:2}
+.plot-action-shape{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.plot-action-shape path{fill:#fff;stroke:#111;stroke-width:3;stroke-linejoin:round}
+.plot-action-text{position:absolute;left:834px;top:118px;width:200px;height:92px;margin:0;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;font-family:"Kalam","Segoe Print","Bradley Hand","Comic Sans MS",cursive;color:#111;font-size:1.15rem;font-weight:700;line-height:1.3}
+.ws-epilogue{margin:1.25rem 0 0;font-size:1.05rem;line-height:1.4;color:#3c4b48}
+.ws-epilogue strong{font-weight:500;color:#1d2a28}
+.ws-epilogue .hand{font-size:1.12rem;line-height:1.4}
+
+/* Staging bar (staging build only) */
+.staging-bar{background:var(--signal);color:#fff;text-align:center;font-family:var(--display);font-size:.95rem;padding:.3rem 1rem}
+
 /* Footer */
 footer{background:var(--cove);color:#d5ebe6;padding:3rem 0 2.5rem;font-family:var(--display)}
 footer .wrap{display:grid;grid-template-columns:1fr auto;gap:2rem;align-items:end}

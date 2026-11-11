@@ -3,5 +3,5 @@ layout: null
 permalink: /robots.txt
 ---
 User-agent: *
-{% if site.noindex %}Disallow: /{% else %}Allow: /{% endif %}
+{% if site.noindex %}Disallow: /{% else %}Disallow: /staging/{% endif %}
 Sitemap: {{ '/sitemap.xml' | absolute_url }}

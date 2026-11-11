@@ -1,4 +1,7 @@
 <header class="nav" id="nav">
+  {%- if site.staging %}
+  <div class="staging-bar">Staging preview. This is not the live site.</div>
+  {%- endif %}
   <div class="wrap">
     <a class="brand" href="{{ '/' | relative_url }}" aria-label="{{ site.title }} home">
       <span class="brand-bar" aria-hidden="true"></span>

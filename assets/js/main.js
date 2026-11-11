@@ -38,7 +38,7 @@
   function fitWorksheets() {
     document.querySelectorAll('.ws-scale').forEach(box => {
       const ws = box.firstElementChild;
-      const s = Math.min(1, box.clientWidth / WS_WIDTH);
+      const s = Math.min(1, box.clientWidth / (ws.offsetWidth || WS_WIDTH));
       ws.style.transform = s < 1 ? `scale(${s})` : '';
       box.style.height = s < 1 ? (ws.offsetHeight * s) + 'px' : '';
     });
